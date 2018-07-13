@@ -23,7 +23,7 @@ void bfs (ll u)
         q.pop();
         cout<<f<<" ";
 
-        for (auto i = g[f].begin(); i!=g[f].end(); i++)
+        for (auto i = g[f].begin(); i!=g[f].end(); i++) // g[f].begin() is address , i holds address and *i holds value
         {
             if(!v[*i])
             {
