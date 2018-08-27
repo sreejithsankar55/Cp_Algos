@@ -31,6 +31,21 @@ ll convert_to_int(string t)
 	return x;
 
 }
+string spaceremove(string r)
+{
+	stringstream st;
+	string temp;
+	
+	st<<r;
+	
+	while(!st.eof())
+	{
+		st>>temp;
+		r=r+temp;
+	}
+	
+	return r;
+}
 int main()
 {
 	/*count number of words in a string*/
@@ -38,11 +53,18 @@ int main()
 	getline(cin,s);
 	cout<<"Number of entered words"<<endl;
 	cout<<wordcount(s);
+	cout<<endl;
 	
 	/*convert a string to an integer*/
 	string t="12345";
-	cout<<"COnverted to int"<<convert_to_int(t);
+	cout<<"Converted to int"<<convert_to_int(t);
+	cout<<endl;
 	
+	/*remove spaces in a string*/
+	string r;
+	cout<<"Enter a string to remove spaces"<<endl;
+	getline(cin,r);
+	cout<<"String with removed spaces"<<spaceremove(r);
 	
 	return 0;
 	
