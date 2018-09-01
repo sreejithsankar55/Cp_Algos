@@ -14,7 +14,7 @@ int main()
 	 
      while (s >> word)
           org.pb(word);
-	 scanf(" "); // important
+	 scanf(" ");
 	 while(t--)
 	 {
 		 string ss;
@@ -36,7 +36,13 @@ int main()
 			 
 				h=(v[i].size()/2)+1;
 			 
-				//cout<<v[i]<<" "<<org[i]<<endl;
+				if(v[i].size()==1)
+				{
+				    if(v[i][0]!=org[i][0])
+				    {
+				        f=1;
+				    }
+				}
 			 for(ll j = 0 ; j < v[i].size() ; j++ )
 			 {
 				if(v[i][j]!=org[i][j])
