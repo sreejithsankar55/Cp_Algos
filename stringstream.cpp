@@ -75,9 +75,9 @@ int main()
     cout<<endl;
 
     /*remove spaces in a string*/
-    string r;
+    string str;
     cout<<"Enter a string to remove spaces"<<endl;
-    getline(cin,r);
+    getline(cin,str);
     cout<<"String with removed spaces"<<endl<<spaceremove(r);
     cout<<endl;
     /*print frequency of a string*/
