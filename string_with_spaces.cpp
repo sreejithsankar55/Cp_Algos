@@ -1,6 +1,5 @@
 #include    <bits/stdc++.h>
 
-#define 	ll 	long long
 #define 	ld 	long double
 #define 	pb 	push_back
 #define 	ff 	first
@@ -13,7 +12,7 @@ using namespace std;
 
 int main()
 {
-    ll t;
+    long long int t;
     cin>>t;
     string temp;
    getline(cin,temp);// this is mandatory as it removes extra spaces
